@@ -37,8 +37,8 @@ To run this project, please follow the steps below:
    This command will package the Python script into a standalone executable file.
 
 3. Locate the generated `startBot.exe` file in the `dist` folder and keep it within the project directory where `server.py` and `client.py` exist.
-OR 
-4. Start the server:
+<br>OR<br> 
+1. Start the server:
    ```
    python server.py <port>
    ```
