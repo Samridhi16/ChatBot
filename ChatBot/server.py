@@ -5,7 +5,7 @@ import threading
 import requests
 import nltk
 
-# API endpoint for the chatGPT
+# API endpoint for the OpenAI
 API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 
 # API KEY
