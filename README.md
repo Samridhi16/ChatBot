@@ -1,5 +1,5 @@
 # CraveWheels ChatBot: Your Ultimate Food Delivery Assistant 🍔🤖
-Welcome to CraveWheels ChatBot, your companion for food delivery services! 🚀
+## Welcome to CraveWheels ChatBot, your companion for food delivery services! 🚀
 
 To run this project, please follow the steps below:
 
@@ -36,8 +36,20 @@ To run this project, please follow the steps below:
    ```
    This command will package the Python script into a standalone executable file.
 
-3. Locate the generated `startBot.exe` file in the `dist` folder and keep it within the project directory where `server.py` and `client.py` exits.
+3. Locate the generated `startBot.exe` file in the `dist` folder and keep it within the project directory where `server.py` and `client.py` exist.
+OR 
+3. Start the server:
+   ```
+   python server.py <port>
+   ```
+   Replace <port> with the desired port number to listen on.
 
+   Start the client:
+   ```
+   python client.py <port> <client_number>
+   ```
+   Replace <port> with the same port number used for the server and <client_number> with a unique identifier for the client.
+   
 ## Running the Project
 
 1. Double-click on the `startBot.exe` file to run the program.
