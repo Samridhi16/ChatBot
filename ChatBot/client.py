@@ -20,6 +20,8 @@ class ChatClient(QObject):
         self.socket = None
         self.text_to_speech_enabled = False
         self.last_response = ""
+        self.entity_labels = ['ORGANIZATION', 'PERSON', 'LOCATION', 'DATE', 'TIME', 'MONEY', 'PERCENT', 'FACILITY', 'GPE', 'NORP', 'PRODUCT', 'EVENT', 'WORK_OF_ART', 'LAW', 'LANGUAGE', 'QUANTITY', 'ORDINAL', 'CARDINAL']
+
 
     def connect_to_server(self):
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -33,13 +35,20 @@ class ChatClient(QObject):
         while True:
             message = self.socket.recv(1024).decode()
             if message:
-                if message.startswith('PERSON:'):
-                    message = message[7:]
-                    self.message_received.emit(f'<b class="entity">Entity=>Person:</b> {message}')
-                elif message.startswith('GPE:'):
-                    message = message[4:]
-                    self.message_received.emit(f'<b class="entity">Entity=>Location:</b> {message}')
-                else:
+                entity_detected = False
+
+                for label in self.entity_labels:
+                    if message.startswith(label + ':'):
+                        entity_detected = True
+                        # Extract entity label and message content
+                        label_end_index = message.index(':')
+                        entity_label = message[:label_end_index]
+                        message = message[label_end_index + 1:]
+
+                        self.message_received.emit(f'<b class="entity">Entity=>{entity_label}:</b> {message}')
+                        break
+
+                if not entity_detected:
                     self.last_response = message
                     message_with_prefix = f'<b class="bot">{message}</b>'
                     self.message_received.emit(message_with_prefix)
