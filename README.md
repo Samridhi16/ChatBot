@@ -7,7 +7,7 @@ To run this project, please follow the steps below:
 
 1. Clone the repository:
    ```
-   git clone <repository_url>
+   git clone https://github.com/Samridhi16/ChatBot.git
    ```
    This will create a local copy of the project on your machine.
 
@@ -38,7 +38,7 @@ To run this project, please follow the steps below:
 
 3. Locate the generated `startBot.exe` file in the `dist` folder and keep it within the project directory where `server.py` and `client.py` exist.
 OR 
-3. Start the server:
+4. Start the server:
    ```
    python server.py <port>
    ```
