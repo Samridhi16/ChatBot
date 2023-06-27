@@ -1,7 +1,7 @@
 # CraveWheels ChatBot: Your Ultimate Food Delivery Assistant 🍔🤖
 ## Welcome to CraveWheels ChatBot, your companion for food delivery services! 🚀
 
-## [Please find the demo link inside the repository]
+## [Please find the demo link in the repository]
    ![image](https://github.com/Samridhi16/ChatBot/assets/26019260/0d845cab-6fb7-45aa-b101-1ff1e6ffde4d)
 
 To run this project, please follow the steps below:
@@ -15,7 +15,7 @@ To run this project, please follow the steps below:
    This will create a local copy of the project on your machine.
 
 2. Add the API key in `server.py`:
-   Open the `server.py` file and locate the section where the API key needs to be added. It could be a variable or a configuration file depending on the project. Insert your API key in the designated place.
+   Open the `server.py` file and locate the section where the API key for Open AI needs to be added. It will be a variable in the `server.py` file. Insert your API key in the designated place.
 
 3. Install the required dependencies:
    - Make sure you have Python installed on your system. The project is compatible with Python versions between 3.7 and 3.9.
@@ -27,7 +27,7 @@ To run this project, please follow the steps below:
      ```
      git clone https://github.com/coqui-ai/TTS
      ```
-   You can refer to the TTS documentation for more details on its usage.
+   You can refer to the TTS documentation (https://tts.readthedocs.io/en/latest/tutorial_for_nervous_beginners.html) for more details on its usage.
 
 ## Building the Executable
 
