@@ -1,9 +1,7 @@
 # CraveWheels ChatBot: Your Ultimate Food Delivery Assistant 🍔🤖
 ## Welcome to CraveWheels ChatBot, your companion for food delivery services! 🚀
+https://github.com/Samridhi16/ChatBot/assets/26019260/cc8d1dfa-f7ca-4fb6-ab59-3d414283dcfd
 
-## [Please find the demo link in the repository] 
-[https://github.com/Samridhi16/ChatBot/blob/main/ChatBotDemo.mp4 ](https://github.com/Samridhi16/ChatBot/assets/26019260/cc8d1dfa-f7ca-4fb6-ab59-3d414283dcfd
-)
 <br> <br>
    ![image](https://github.com/Samridhi16/ChatBot/assets/26019260/ff787a29-9c21-46f5-b91d-3da66ad7a127)
 
